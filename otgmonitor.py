@@ -36,7 +36,7 @@ def otgmon(time_start, time_stop):
 
     # Analyze only completed grating transitions
     bad_times = []
-    i0, i1 = 0, main_grating_states
+    i0, i1 = 0, len(main_grating_states)
     
     if main_grating_states[0] != 'NONE':
         i0 = list(main_grating_states).index('NONE')
